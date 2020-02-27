@@ -8,7 +8,9 @@
  */
 
 // Your code :
-
+function getLast(arr) {
+    return typeof arr == "object" ? arr[arr.length - 1] : arr.split("")[arr.split("").length-1];
+}
 //* Begin of tests
 const assert = require('assert')
 

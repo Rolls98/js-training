@@ -7,7 +7,11 @@
  *
  */
 
-
+function capitalize(str){
+    var tab = str.toLowerCase().split("");
+    tab[0] = tab[0].toUpperCase();
+    return tab.join("");
+}
 //* Begin of tests
 const assert = require('assert')
 

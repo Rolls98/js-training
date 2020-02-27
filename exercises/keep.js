@@ -12,9 +12,25 @@
  *
  */
 
+function keepFirst(str) {
+   
+    return str.split("").splice(0, 2).join("");
+}
+function keepLast(str) {
+    return str.split("").splice(-2, 2).join("");
+}
+
+function keepFirstLast(str) {
+    return keepFirst(str) + keepLast(str);
+}
 
 //* Begin of tests
 const assert = require('assert')
+assert.strictEqual(typeof keepFirst, 'function')
+assert.strictEqual(typeof keepLast, 'function')
+assert.strictEqual(typeof keepFirstLast, 'function')
+assert.strictEqual(keepFirst("abcdef"), "ab")
+assert.strictEqual(keepLast("dsdgaadb"), "db")
+assert.strictEqual(keepFirstLast("coooooool"), "cool")
 
-assert.fail('You must write your own tests')
 // End of tests */

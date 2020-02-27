@@ -11,6 +11,18 @@
 
 // Your code :
 
+function multiply(num1, num2) {
+    if(num2 == 0 || num1 == 0){
+        return 0
+    }else{
+        if (num1 > 0 && num2 < 0 || num1 < 0 && num2 > 0){
+            return -(("i").repeat(Math.abs(num1)).repeat(Math.abs(num2)).length) 
+        }else{
+            return ("i").repeat(Math.abs(num1)).repeat(Math.abs(num2)).length
+        }
+    }
+}
+
 //* Begin of tests
 const assert = require('assert')
 

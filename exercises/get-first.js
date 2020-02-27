@@ -8,7 +8,9 @@
  */
 
 // Your code :
-
+    function getFirst(arr){
+        return typeof arr == "object" ? arr[0] : arr.split("")[0];
+    }
 //* Begin of tests
 const assert = require('assert')
 
